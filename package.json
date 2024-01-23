@@ -1,23 +1,24 @@
 {
-  "name": "markdown-word-count",
-  "displayName": "markdown-word-count",
-	"publisher": "jimbobbennett",
-  "description": "A word count extension for markdown and MDX files",
+  "name": "text-word-count",
+  "displayName": "text-word-count",
+  "publisher": "jimbobbennett",
+  "description": "A word count extension for markdown and plain text files, such as txt and mdx files",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.85.0"
   },
   "author": {
-		"name": "jimbobbennett",
+    "name": "jimbobbennett",
     "url": "https://jimbobbennett.dev"
-	},
+  },
   "categories": [
     "Other"
   ],
   "license": "SEE LICENSE IN LICENSE",
-	"activationEvents": [
-		"*"
-	],
+  "activationEvents": [
+    "onLanguage:plaintext",
+    "onLanguage:markdown"
+  ],
   "main": "./out/extension.js",
   "scripts": {
     "vscode:prepublish": "npm run compile",

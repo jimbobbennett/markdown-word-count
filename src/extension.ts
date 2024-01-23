@@ -48,7 +48,7 @@ function shouldCountWords(doc: vscode.TextDocument): boolean {
 		return true;
 	}
 
-	if (doc.languageId === "plaintext" && doc.fileName.toLowerCase().endsWith('.mdx')) {
+	if (doc.languageId === "plaintext") {
 		return true;
 	}
 
