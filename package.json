@@ -3,7 +3,7 @@
   "displayName": "Text word count",
   "publisher": "jimbobbennett",
   "description": "A word count extension for markdown and plain text files, such as txt and mdx files",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -19,7 +19,8 @@
 	"icon": "img/icon.png",
   "activationEvents": [
     "onLanguage:plaintext",
-    "onLanguage:markdown"
+    "onLanguage:markdown",
+    "onLanguage:mdx"
   ],
   "repository": {
     "type": "git",

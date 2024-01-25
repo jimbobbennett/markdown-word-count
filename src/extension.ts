@@ -44,15 +44,14 @@ function updateStatusBarItem(): void {
 }
 
 function shouldCountWords(doc: vscode.TextDocument): boolean {
-	if (doc.languageId === "markdown") {
-		return true;
+	switch (doc.languageId) {
+		case "markdown":
+		case "plaintext":
+		case "mdx":
+			return true;
+		default:
+			return false;
 	}
-
-	if (doc.languageId === "plaintext") {
-		return true;
-	}
-
-	return false;
 }
 
 export function getWordCount(doc: vscode.TextDocument): number {
